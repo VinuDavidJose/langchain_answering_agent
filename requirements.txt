@@ -1,14 +1,22 @@
-streamlit==1.26.0
-
-# LangChain ecosystem (compatible)
+# Core LangChain & compatible modules
 langchain==0.1.16
-langchain_core==0.1.43      # ✅ Compatible with langchain==0.1.16
-langchain_community==0.0.30
+langchain-core==0.1.42
+langchain-community==0.0.30
 langchain-openai==0.0.7
 langchain-google-genai==0.0.8
 
-# LLMs & tools
+# Google Gemini support
 google-generativeai==0.5.4
 google-api-core==2.18.0
+
+# Tooling
 duckduckgo-search==5.2.2
-tqdm==4.66.2
+
+# LangChain Hub (optional, only if using `from langchain_hub import pull`)
+langchainhub==0.1.15  # use this, not `langchain-hub`
+
+# Streamlit app
+streamlit==1.26.0
+
+# Miscellaneous
+tqdm==4.66.0
