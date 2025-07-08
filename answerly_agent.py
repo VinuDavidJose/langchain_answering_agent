@@ -1,6 +1,6 @@
 
 import streamlit as st
-from langchain_hub import pull
+from langchain import hub
 from langchain.agents import load_tools, create_react_agent, AgentExecutor
 
 # 🔹 OpenAI
@@ -83,7 +83,7 @@ llm = (
     else ChatGoogleGenerativeAI(model=model_name, google_api_key=gemini_key)
 )
 
-prompt = pull("hwchase17/react")
+prompt = hub.pull("hwchase17/react")
 tools = load_tools(["ddg-search"])
 agent = create_react_agent(llm, tools, prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)

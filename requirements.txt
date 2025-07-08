@@ -1,22 +1,21 @@
-# Core LangChain & compatible modules
+# Core LangChain packages
 langchain==0.1.16
 langchain-core==0.1.42
-langchain-community==0.0.30
+langchain-community==0.0.32
 langchain-openai==0.0.7
 langchain-google-genai==0.0.8
+langchainhub==0.1.15
 
-# Google Gemini support
+# LLM Providers
+openai==1.31.1
 google-generativeai==0.5.4
-google-api-core==2.18.0
+google-api-core==2.18.0  # for error handling and retries
 
 # Tooling
 duckduckgo-search==5.2.2
 
-# LangChain Hub (optional, only if using `from langchain_hub import pull`)
-langchainhub==0.1.15  # use this, not `langchain-hub`
-
-# Streamlit app
+# Web UI
 streamlit==1.26.0
 
-# Miscellaneous
+# Utility
 tqdm==4.66.0
