@@ -1,4 +1,4 @@
-# Core LangChain packages
+# LangChain Core
 langchain==0.1.16
 langchain-core==0.1.42
 langchain-community==0.0.32
@@ -8,14 +8,14 @@ langchainhub==0.1.15
 
 # LLM Providers
 openai==1.31.1
-google-generativeai==0.5.4
-google-api-core==2.18.0  # for error handling and retries
+google-generativeai==0.3.2
+google-api-core==2.18.0
 
 # Tooling
 duckduckgo-search==5.2.2
 
-# Web UI
+# UI
 streamlit==1.26.0
 
-# Utility
+# Utilities
 tqdm==4.66.0
